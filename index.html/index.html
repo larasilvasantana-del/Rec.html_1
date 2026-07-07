@@ -3,87 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empatia e Cooperação</title>
+    <title>Empatia e Cooperação - Etapa 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Empatia & Cooperação</h1>
-        <p>Construindo pontes e transformando o mundo juntos.</p>
-    </header>
-
     <main class="container">
+        <h1>Empatia & Cooperação</h1>
+        <p class="subtitulo">Etapa 1: Construindo Conexões</p>
+        
+        <hr>
+
         <section class="card">
             <h2>O que é Empatia?</h2>
-            <p>Empatia é a capacidade de se colocar no lugar do outro, compreender seus sentimentos e perspectivas, e agir com compaixão.</p>
+            <p>É a capacidade de se colocar no lugar do outro, compreender seus sentimentos e perspectivas, e agir com respeito.</p>
         </section>
 
         <section class="card">
             <h2>O que é Cooperação?</h2>
-            <p>Cooperação é o ato de trabalhar em conjunto por um objetivo comum. Quando colaboramos, dividimos a carga e multiplicamos o sucesso.</p>
+            <p>É o ato de trabalhar em conjunto por um objetivo comum, unindo forças para que todos possam crescer juntos.</p>
         </section>
     </main>
 
-    <footer>
-        <p>Projeto criado com ❤️ para espalhar o bem.</p>
-    </footer>
-
 </body>
-</html>/* Configurações Gerais */
+</html>/* Configurações gerais da página */
 body {
+    background-color: #4A148C; /* Cor roxa de fundo */
+    color: #FFFFFF;           /* Texto em branco para dar contraste */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f7f6;
-    color: #333;
-}
-
-/* Cabeçalho */
-header {
-    background-color: #4a90e2;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-/* Layout do Conteúdo */
-.container {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 0 20px;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-/* Cards (Caixas de texto) */
-.card {
-    background: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.card h2 {
-    color: #4a90e2;
+/* Caixa principal que centraliza o conteúdo */
+.container {
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #E1BEE7; /* Roxo bem clarinho para o subtítulo */
     margin-top: 0;
 }
 
-/* Rodapé */
-footer {
-    text-align: center;
+hr {
+    border: 1px solid #7B1FA2;
+    margin: 20px 0;
+}
+
+/* Caixas de texto para destacar os conceitos */
+.card {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo branco semi-transparente */
     padding: 20px;
-    background-color: #333;
-    color: #ccc;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: left;
+    border-left: 5px solid #BA68C8; /* Detalhe roxo claro na lateral */
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #E1BEE7;
 }
